@@ -1,6 +1,6 @@
-set -x
-sudo apt-get update
-sudo apt-get upgrade -y
+#set -x
+#sudo apt-get update
+#sudo apt-get upgrade -y
 sudo apt-get install \
 mc \
 git \
