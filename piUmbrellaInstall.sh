@@ -8,12 +8,12 @@ ExternalDrive=/media/Biggy
 mkdir -p $ExternalDrive/temp
 chmod 777 $ExternalDrive/temp
 rm ~/temp
-ln -s $ExternalDrive/temp ~/temp
+ln -s $ExternalDrive/temp ~/
 
 mkdir -p $ExternalDrive/git
 chmod 777 $ExternalDrive/git
 rm ~/git
-ln -s $ExternalDrive/git ~/git 
+ln -s $ExternalDrive/git ~/
 
 rm ~/temp/http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
 curl -o ~/temp/repository.sd-xbmc.org-2.0.0.zip http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
