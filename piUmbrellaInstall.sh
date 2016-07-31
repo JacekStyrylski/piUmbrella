@@ -18,6 +18,10 @@ chmod 777 $ExternalDrive/git
 rm -f ~/git
 ln -s $ExternalDrive/git ~/
 
-printf "\nDownload Polish TV Plugin (Do not forget to add)\n"
+printf "\nDownload Polish TV Plugin (Do not forget to add to OSMC)\n"
 curl -s -o ~/temp/repository.sd-xbmc.org-2.0.0.zip http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
 
+echo "bind 'set show-all-if-ambiguous on'" >> ~\.bashrc
+echo "TAB:menu-complete'" >> ~\.bashrc 
+
+printf "\nScript finished.\n\n"
