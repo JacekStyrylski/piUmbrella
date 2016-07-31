@@ -22,7 +22,7 @@ printf "3. Download Polish TV Plugin (Do not forget to add to OSMC)\n"
 curl -s -o ~/temp/repository.sd-xbmc.org-2.0.0.zip http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
 
 printf "4. Set proper binding in bash\n"
-echo "bind 'set show-all-if-ambiguous on'" >> ~\.bashrc
-echo "TAB:menu-complete'" >> ~\.bashrc 
+echo "bind 'set show-all-if-ambiguous on'" >> ~/.bashrc
+echo "TAB:menu-complete'" >> ~/.bashrc 
 
 printf "\nScript finished.\n\n"
