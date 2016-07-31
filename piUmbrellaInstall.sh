@@ -18,6 +18,6 @@ chmod 777 $ExternalDrive/git
 rm -f ~/git
 ln -s $ExternalDrive/git ~/
 
-printf "\nPolish TV\n"
+printf "\nDownload Polish TV Plugin (Do not forget to add)\n"
 curl -s -o ~/temp/repository.sd-xbmc.org-2.0.0.zip http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
 
