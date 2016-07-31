@@ -9,13 +9,13 @@ ExternalDrive=/media/Biggy
 printf "\nNew dir: ~/temp\n"
 mkdir -p $ExternalDrive/temp
 chmod 777 $ExternalDrive/temp
-rm ~/temp
+rm -f ~/temp
 ln -s $ExternalDrive/temp ~/
 
 printf "\nNew dir: ~/git\n"
 mkdir -p $ExternalDrive/git
 chmod 777 $ExternalDrive/git
-rm ~/git
+rm -f ~/git
 ln -s $ExternalDrive/git ~/
 
 printf "\nPolish TV\n"
