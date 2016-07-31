@@ -6,22 +6,22 @@ ExternalDrive=/media/Biggy
 #sudo apt-get upgrade -y
 #sudo apt-get install mc git libffi-dev libssl-dev zlib1g-dev libxslt1-dev libxml2-dev python python-pip python-dev build-essential samba deluge zsh deluge-console deluge-web -y
 
-printf "\nNew dir: ~/temp\n"
+printf "\n1. New dir: ~/temp\n"
 mkdir -p $ExternalDrive/temp
 chmod 777 $ExternalDrive/temp
 rm -f ~/temp
 ln -s $ExternalDrive/temp ~/
 
-printf "\nNew dir: ~/git\n"
+printf "2. New dir: ~/git\n"
 mkdir -p $ExternalDrive/git
 chmod 777 $ExternalDrive/git
 rm -f ~/git
 ln -s $ExternalDrive/git ~/
 
-printf "\nDownload Polish TV Plugin (Do not forget to add to OSMC)\n"
+printf "3. Download Polish TV Plugin (Do not forget to add to OSMC)\n"
 curl -s -o ~/temp/repository.sd-xbmc.org-2.0.0.zip http://sd-xbmc.org/repository/repository.sd-xbmc.org/repository.sd-xbmc.org-2.0.0.zip
 
-printf "\nSet proper binding in bash\n"
+printf "4. Set proper binding in bash\n"
 echo "bind 'set show-all-if-ambiguous on'" >> ~\.bashrc
 echo "TAB:menu-complete'" >> ~\.bashrc 
 
