@@ -40,6 +40,8 @@ ln -sf $ExternalDrive/Muzyka ~/
 ln -sf $ExternalDrive/Seriale ~/
 ln -sf $ExternalDrive/Obrazy ~/
 
+sudo curl -s -o /etc/ssh/sshd_config https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/sshd_config
+
 # ssh-keygen -t rsa -b 4096 -C "jacek.styrylski@gmail.com"
 
 printf "\nScript finished.\n\n"
