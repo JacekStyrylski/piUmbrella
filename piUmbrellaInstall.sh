@@ -35,9 +35,9 @@ rm -fR ~/Music
 rm -fR ~/Pictures
 rm -fR ~/TV Schows
 
-ln -s $ExternalDrive/Filmy ~/
-ln -s $ExternalDrive/Muzyka ~/
-ln -s $ExternalDrive/Seriale ~/
-ln -s $ExternalDrive/Obrazy ~/
+ln -sf $ExternalDrive/Filmy ~/
+ln -sf $ExternalDrive/Muzyka ~/
+ln -sf $ExternalDrive/Seriale ~/
+ln -sf $ExternalDrive/Obrazy ~/
 
 printf "\nScript finished.\n\n"
