@@ -8,7 +8,7 @@ ExternalDrive=/media/Biggy
 mkdir -p $ExternalDrive/temp
 chmod 777 $ExternalDrive/temp
 rm ~/temp
-ln -s $ExternalDrive/tmep ~/temp
+ln -s $ExternalDrive/temp ~/temp
 
 mkdir -p $ExternalDrive/git
 chmod 777 $ExternalDrive/git
