@@ -25,4 +25,7 @@ printf "4. Set proper binding in bash\n"
 echo "bind 'set show-all-if-ambiguous on'" >> ~/.bashrc
 echo "TAB:menu-complete'" >> ~/.bashrc 
 
+printf "5. Copy remote control settings\n"
+curl -s -o ~/.kodi/userdata/keymaps/remote.xml https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/remote.xml
+
 printf "\nScript finished.\n\n"
