@@ -42,7 +42,9 @@ ln -sf $ExternalDrive/Obrazy ~/
 
 sudo curl -s -o /etc/ssh/sshd_config https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/sshd_config
 sudo curl -s -o /etc/samba/smb.conf https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/smb.conf
-
+sudo curl -s -o ~/.zshrc https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/.zshrc.conf
 # ssh-keygen -t rsa -b 4096 -C "jacek.styrylski@gmail.com"
+
+chsh -s $(which zsh)
 
 printf "\nScript finished.\n\n"

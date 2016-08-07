@@ -1,6 +1,3 @@
-# Autoload screen if we aren't in it.  (Thanks Fjord!)
-if [[ $STY = '' ]] then screen -xR; fi
-
 #{{{ ZSH Modules
 
 autoload -U compinit promptinit zcalc zsh-mime-setup
