@@ -53,5 +53,7 @@ printf "6. Configure Deluged"
 sudo systemctl stop deluged
 sudo rm /etc/init.d/deluged
 sudo update-rc.d deluge-daemon remove
+sudo curl -s -o /etc/systemd/system/deluged.service https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/deluged.service
+
 
 printf "\nScript finished.\n\n"
