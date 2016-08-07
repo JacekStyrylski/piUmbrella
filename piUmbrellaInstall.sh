@@ -48,4 +48,10 @@ sudo curl -s -o /etc/motd https://raw.githubusercontent.com/henioStraszny/piUmbr
 
 chsh -s $(which zsh)
 
+printf "6. Configure Deluged"
+
+sudo systemctl stop deluged
+sudo rm /etc/init.d/deluged
+sudo update-rc.d deluge-daemon remove
+
 printf "\nScript finished.\n\n"
