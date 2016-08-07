@@ -4,9 +4,9 @@ After=network-online.target
 
 [Service]
 Type=simple
-User=deluge
-Group=deluge
-UMask=007
+User=debian-deluged
+Group=debian-deluged
+UMask=000
 
 ExecStart=/usr/bin/deluged -d
 
