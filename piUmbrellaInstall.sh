@@ -53,7 +53,27 @@ printf "6. Configure Deluged"
 sudo systemctl stop deluged
 sudo rm /etc/init.d/deluged
 sudo update-rc.d deluge-daemon remove
-sudo curl -s -o /etc/systemd/system/deluged.service https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/deluged.service
 
+sudo curl -s -o /etc/systemd/system/deluged.service https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/deluged.service
+sudo curl -s -o /etc/systemd/system/deluge-web.service https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/deluge-web.service
+sudo systemctl daemon-reload
+systemctl enable /etc/systemd/system/deluged.service
+systemctl enable /etc/systemd/system/deluge-web.service
+deluged
+sleep 1m
+killall deluged
+systemctl start deluged
+systemctl start deluge-web
+systemctl status deluged
+systemctl status deluge-web
+mkdir ~/.config/deluge
+echo "krowa:Krowa11:10" >> ~/.config/deluge/auth
+deluge-console "config -s allow_remote True"
+systemctl start deluged
+systemctl start deluge-web
+sudo curl -s -o ~/.config/deluge/core.conf https://raw.githubusercontent.com/henioStraszny/piUmbrella/master/core.conf
+systemctl stop deluged
+systemctl stop deluge-web
+deluge-console 'config -s listen_interface 127.0.0.1'
 
 printf "\nScript finished.\n\n"
